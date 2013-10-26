@@ -1,3 +1,20 @@
+// Example
+//
+//     package main
+//
+//     import "github.com/brunoqc/go-clementine"
+//
+//     func main() {
+//         clementine := clementine.Clementine{
+//             Host:     "127.0.0.1",
+//             Port:     5500,
+//             AuthCode: 28615,
+//         }
+//         errPause := clementine.SimpleStop()
+//         if errPause != nil {
+//             panic(errPause)
+//         }
+//     }
 package clementine
 
 import (
@@ -127,14 +144,17 @@ func (c *Clementine) sendSimplePlayPause(msg *pb_remote.Message) error {
 	}
 }
 
+// SimplePlay connect to Clementine, send the 'Play' command and disconnect.
 func (c *Clementine) SimplePlay() error {
 	return c.sendSimplePlayPause(msgPlay)
 }
 
+// SimplePause connect to Clementine, send the 'Pause' command and disconnect.
 func (c *Clementine) SimplePause() error {
 	return c.sendSimplePlayPause(msgPause)
 }
 
+// SimpleStop connect to Clementine, send the 'Stop' command and disconnect.
 func (c *Clementine) SimpleStop() error {
 	return c.sendSimplePlayPause(msgStop)
 }
