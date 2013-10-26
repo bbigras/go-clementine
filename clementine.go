@@ -1,3 +1,5 @@
+// Control Clementine using the remote control feature and goprotobuf.
+//
 // Example
 //
 //     package main
