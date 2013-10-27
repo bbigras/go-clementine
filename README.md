@@ -1,5 +1,7 @@
 #go-clementine#
 
+[![goci](https://goci.herokuapp.com/project/image/github.com/brunoqc/go-clementine)](http://goci.me/project/github.com/brunoqc/go-clementine)
+
 Control [Clementine](http://www.clementine-player.org/) using the [remote control feature](https://code.google.com/p/clementine-player/wiki/RemoteControl) and [goprotobuf](https://code.google.com/p/goprotobuf/).
 
 For now, there's only 3 functions:
