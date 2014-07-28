@@ -1,6 +1,7 @@
 #go-clementine#
 
 [![Build Status](https://travis-ci.org/brunoqc/go-clementine.svg?branch=master)](https://travis-ci.org/brunoqc/go-clementine)
+[![GoDoc](https://godoc.org/github.com/brunoqc/go-clementine?status.svg)](https://godoc.org/github.com/brunoqc/go-clementine)
 
 Control [Clementine](http://www.clementine-player.org/) using the [remote control feature](https://code.google.com/p/clementine-player/wiki/RemoteControl) and [goprotobuf](https://code.google.com/p/goprotobuf/).
 
